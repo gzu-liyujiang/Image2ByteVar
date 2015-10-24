@@ -14,7 +14,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		ConvertTool tool = new ConvertTool();
-		tool.convert();
+		tool.convert("icon", "/liyujiang.png");
 	}
 
 }

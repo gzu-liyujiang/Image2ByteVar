@@ -7,11 +7,10 @@ import java.io.InputStream;
 
 public class ConvertTool {
 
-	public void convert() {
+	public void convert(String varName, String pathInSrc) {
 		byte[] data = null;
 		try {
-			InputStream input = getClass()
-					.getResourceAsStream("/liyujiang.png");
+			InputStream input = getClass().getResourceAsStream(pathInSrc);
 			ByteArrayOutputStream output = new ByteArrayOutputStream();
 			byte[] buf = new byte[1024];
 			int numBytesRead = 0;
@@ -28,8 +27,8 @@ public class ConvertTool {
 				}
 			}
 			str += "}";
-			System.out.println("public final static byte IMAGE[] = " + str
-					+ ";");
+			System.out.println("public static final byte[] "
+					+ varName.toUpperCase() + " = " + str + ";");
 			output.close();
 			input.close();
 		} catch (FileNotFoundException ex1) {
