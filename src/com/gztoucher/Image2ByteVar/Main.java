@@ -1,20 +1,16 @@
 package com.gztoucher.Image2ByteVar;
 
 /**
- * Í¼Æ¬×ªÎª×Ö½ÚÊı×é±äÁ¿
- * 
- * @author ÀîÓñ½­
- * @version 2015.05.24
- * 
+ * å›¾ç‰‡è½¬ä¸ºå­—èŠ‚æ•°ç»„å˜é‡
+ *
+ * @author æç‰æ±Ÿ
+ * @since 2015/05/24
  */
 public class Main {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		ConvertTool tool = new ConvertTool();
-		tool.convert("icon", "/liyujiang.png");
-	}
+    public static void main(String[] args) {
+        ConvertTool tool = new ConvertTool();
+        tool.convert("icon", "/liyujiang.png");
+    }
 
 }
